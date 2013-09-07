@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<es.flakiness.cqplus.IssueSummaryView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/hello_world" />
+</es.flakiness.cqplus.IssueSummaryView><!-- From: file:/Users/hajimemorrita/work/cqplus/cqplus/src/main/res/layout/issue_summary.xml -->
