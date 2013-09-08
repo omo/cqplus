@@ -23,5 +23,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion 17
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        testPackageName "es.flakiness.cqplus.test"
+        testBuildType "debug"
     }
 }
