@@ -41,7 +41,7 @@ public class ServiceInvocation implements Ticket {
     }
 
     public void respond() {
-        if (null != mWill)
+        if (null == mWill)
             return;
         try {
             mWillMethod.invoke(mWill, mResponse);
@@ -71,7 +71,7 @@ public class ServiceInvocation implements Ticket {
 
     // FIXME: this result should be memoized.
     static public Method findRequestMethod(Service service, Class parameterClass) {
-        for (Method m : parameterClass.getMethods()) {
+        for (Method m : service.getClass().getMethods()) {
             // FIMXE: Better to have an annotation.
             if (!Modifier.isPublic(m.getModifiers()))
                 continue;
