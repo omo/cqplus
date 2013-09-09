@@ -3,12 +3,12 @@ package es.flakiness.ticket;
 /**
  * Created by hajimemorrita on 9/8/13.
  */
-public class RegisteredProxy implements Proxy {
+public class InvokingProxy implements Proxy {
 
     private ServiceInvoker mInvoker;
     private Service mService;
 
-    public RegisteredProxy(ServiceInvoker invoker, Service service) {
+    public InvokingProxy(ServiceInvoker invoker, Service service) {
         mInvoker = invoker;
         mService = service;
     }
